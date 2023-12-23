@@ -13,8 +13,8 @@ namespace HangfireDemo.Controllers
         {
             RecurringJob.AddOrUpdate("RecurringJob1",
                 () => Console.WriteLine("Recurring Job Triggered"),
-                "* * * * *");
-
+                "*/1 * * * *");
+            
             return Ok();
         }
 
